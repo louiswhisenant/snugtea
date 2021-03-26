@@ -1,0 +1,28 @@
+#top-nav {
+	background-color: $color-1;
+	padding: 1rem;
+	display: flex;
+	.nav-brand {
+		display: flex;
+		justify-content: center;
+		.logo-btn {
+			background-color: $color-2;
+			padding: 1rem;
+			border-radius: 0.25rem;
+			color: inherit;
+			border: none;
+			font: inherit;
+			cursor: pointer;
+			outline: inherit;
+			.snug {
+				color: $color-1;
+			}
+			.heart {
+				color: $color-1;
+			}
+			.tea {
+				color: $color-1;
+			}
+		}
+	}
+}

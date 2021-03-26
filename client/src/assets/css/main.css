@@ -1,0 +1,37 @@
+#top-nav {
+  background-color: #1e0303;
+  padding: 1rem;
+  display: flex; }
+  #top-nav .nav-brand {
+    display: flex;
+    justify-content: center; }
+    #top-nav .nav-brand .logo-btn {
+      background-color: #dd006a;
+      padding: 1rem;
+      border-radius: 0.25rem;
+      color: inherit;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit; }
+      #top-nav .nav-brand .logo-btn .snug {
+        color: #1e0303; }
+      #top-nav .nav-brand .logo-btn .heart {
+        color: #1e0303; }
+      #top-nav .nav-brand .logo-btn .tea {
+        color: #1e0303; }
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #c8c9be;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #2e2b2b; }
