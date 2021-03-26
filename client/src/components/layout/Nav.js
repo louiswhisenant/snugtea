@@ -8,8 +8,13 @@ const Nav = () => {
 	const [playGulp] = useSound(gulp, { playbackRate, volume: 0.5 });
 	const [playAhhh] = useSound(ahhh, { volume: 0.5 });
 	const [gulpClick, setGulpClick] = useState(0);
+	const [isOpen, setIsOpen] = useState(false);
 
-	const logoClick = () => {
+	const handleToggle = () => {
+		setIsOpen(!isOpen);
+	}
+
+	const handleClick = () => {
 		setGulpClick(gulpClick + 1);
 
 		if (gulpClick < 10) {
@@ -33,11 +38,38 @@ const Nav = () => {
 				<button
 					className='logo-btn'
 					value={gulpClick}
-					onClick={logoClick}>
+					onClick={handleClick}>
 					<span className='snug'>Snug</span>{' '}
 					<i className='far fa-heart heart'></i>{' '}
 					<span className='tea'>Tea</span>
 				</button>
+			</div>
+			<div className="nav-toggle">
+				<button onClick={handleToggle}>
+					{isOpen ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
+				</button>
+			</div>
+			<div className={`nav-menu ${isOpen ? 'show' : 'hide'}`}>
+				<div className="nav-menu-item">
+					<a href="#!">
+						Home
+					</a>
+				</div>
+				<div className="nav-menu-item">
+					<a href="#!">
+						Products
+					</a>
+				</div>
+				<div className="nav-menu-item">
+					<a href="#!">
+						About
+					</a>
+				</div>
+				<div className="nav-menu-item">
+					<a href="#!">
+						Contact
+					</a>
+				</div>
 			</div>
 		</div>
 	);

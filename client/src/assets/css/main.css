@@ -1,37 +1,47 @@
+button {
+  background-color: #dd006a;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; }
+
 #top-nav {
   background-color: #1e0303;
   padding: 1rem;
-  display: flex; }
+  display: flex;
+  align-items: center;
+  border: green solid 2px; }
   #top-nav .nav-brand {
-    display: flex;
-    justify-content: center; }
-    #top-nav .nav-brand .logo-btn {
-      background-color: #dd006a;
-      padding: 1rem;
-      border-radius: 0.25rem;
-      color: inherit;
-      border: none;
-      font: inherit;
-      cursor: pointer;
-      outline: inherit; }
-      #top-nav .nav-brand .logo-btn .snug {
-        color: #1e0303; }
-      #top-nav .nav-brand .logo-btn .heart {
-        color: #1e0303; }
-      #top-nav .nav-brand .logo-btn .tea {
-        color: #1e0303; }
+    border: green solid 2px; }
+    #top-nav .nav-brand .logo-btn .snug {
+      color: #1e0303; }
+    #top-nav .nav-brand .logo-btn .heart {
+      color: #1e0303; }
+    #top-nav .nav-brand .logo-btn .tea {
+      color: #1e0303; }
+  #top-nav .nav-toggle {
+    margin-left: auto; }
+  #top-nav .nav-menu {
+    display: none; }
+    #top-nav .nav-menu.show {
+      display: initial;
+      position: absolute;
+      right: 0;
+      top: 5rem; }
 
 html,
 body {
-  height: 100vh;
-  width: 100vw;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: #c8c9be;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  color: #2e2b2b; }
+  color: #2e2b2b;
+  font-size: 10px; }

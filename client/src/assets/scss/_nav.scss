@@ -1,28 +1,39 @@
 #top-nav {
-	background-color: $color-1;
-	padding: 1rem;
-	display: flex;
-	.nav-brand {
-		display: flex;
-		justify-content: center;
-		.logo-btn {
-			background-color: $color-2;
-			padding: 1rem;
-			border-radius: 0.25rem;
-			color: inherit;
-			border: none;
-			font: inherit;
-			cursor: pointer;
-			outline: inherit;
-			.snug {
-				color: $color-1;
-			}
-			.heart {
-				color: $color-1;
-			}
-			.tea {
-				color: $color-1;
-			}
-		}
-	}
+  background-color: $color-1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  border: green solid 2px;
+
+  .nav-brand {
+    border: green solid 2px;
+    .logo-btn {
+      .snug {
+        color: $color-1;
+      }
+      .heart {
+        color: $color-1;
+      }
+      .tea {
+        color: $color-1;
+      }
+    }
+  }
+
+  .nav-toggle {
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    display: none;
+    &.show {
+      display: initial;
+      position: absolute;
+      right: 0;
+      top: 5rem;
+    }
+    &.hide {
+    }
+  }
 }
